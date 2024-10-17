@@ -1,7 +1,7 @@
 import {
   handleGetProductLocalStorage,
   setInLocalStorage,
-} from '../persistence/localstorage'
+} from '../persistence/localStorage'
 import { closeModal } from '../views/modal'
 import { handleGetProductsToStore, handleRenderList } from '../views/store'
 import { productoActivo } from '../../main'

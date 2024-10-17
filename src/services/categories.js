@@ -1,35 +1,36 @@
 //CATEGORIA
 
-import { categoriaActiva } from "../../main"
-import { handleGetProductLocalStorage } from "../persistence/localstorage"
-import { handleRenderList } from "../views/store"
+import { categoriaActiva } from '../../main'
+import { handleGetProductLocalStorage } from '../persistence/localStorage'
+import { handleRenderList } from '../views/store'
 
 const handleFilterProductsByCategory = (category) => {
   const products = handleGetProductLocalStorage()
-  switch(category){
+  switch (category) {
     case categoriaActiva:
       handleRenderList(products)
-      break;
+      break
     case 'All':
       handleRenderList(products)
-      break;
+      break
     case 'Hamburguesas':
-      case 'Papas':
-        case 'Gaseosas':
-          const filterProducts = products.filter((product) => product.categoria === category)
-          handleRenderList(filterProducts)
+    case 'Papas':
+    case 'Gaseosas':
+      const filterProducts = products.filter(
+        (product) => product.categoria === category
+      )
+      handleRenderList(filterProducts)
     default:
-      break;
+      break
     case 'mayorPrecio':
-        const filterProductsMayor = products.sort((a, b) => b.precio - a.precio)
-        handleRenderList(filterProductsMayor)
-        break;
+      const filterProductsMayor = products.sort((a, b) => b.precio - a.precio)
+      handleRenderList(filterProductsMayor)
+      break
     case 'menorPrecio':
-        const filterProductsMenor = products.sort((a, b) => a.precio - b.precio)
-        handleRenderList(filterProductsMenor)
+      const filterProductsMenor = products.sort((a, b) => a.precio - b.precio)
+      handleRenderList(filterProductsMenor)
   }
 }
-
 
 //Renderiza las categorias en el DOM
 export const renderCategories = () => {
