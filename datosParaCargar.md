@@ -1,38 +1,9 @@
+Imagen de hamburguesa
 
-0
-: 
-{id: "2024-10-13T20:57:42.966Z", nombre: "McMelt",…}
-categoria
-: 
-"Hamburguesas"
-id
-: 
-"2024-10-13T20:57:42.966Z"
-imagen
-: 
 "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kPXPtaX9/200/200/original?country=ar"
-nombre
-: 
-"McMelt"
-precio
-: 
-"8500"
-1
-: 
-{id: "2024-10-13T20:58:55.370Z", nombre: "Manaos de Uva",…}
-categoria
-: 
-"Gaseosas"
-id
-: 
-"2024-10-13T20:58:55.370Z"
-imagen
-: 
-"https://supervalkiria.tienda-online.com/server/Portal_0005217_0041187/img/products/manaos-uva_1009074_46100263.jpg"
-nombre
-: 
-"Manaos de Uva"
-precio
-: 
-"1000"
 
+Imagen de gaseosa
+"https://supervalkiria.tienda-online.com/server/Portal_0005217_0041187/img/products/manaos-uva_1009074_46100263.jpg"
+
+Imagen de papas
+"https://media.istockphoto.com/id/157510962/es/foto/papas-fritas-en-placa.jpg?s=612x612&w=0&k=20&c=aPY8JYza9bgW-BGq0pciDXnFnWeHKo_soBZNw2-qCrg="
