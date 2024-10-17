@@ -22,24 +22,23 @@
   <body>
     <header>
       <div class="container_principalHeader">
-        <div class="container_contentHeader">
-          <div class="headerSearch">
-            <input
-              type="text"
-              class="inputHeader"
-              placeholder="Ingrese un elemento"
-            />
-            <button class="buttonSearch">
-              Buscar<span class="material-symbols-outlined"> search </span>
-            </button>
-          </div>
-          <div>
-            <button class="header_buttonAdd" id="buttonAddElement">
-              Agregar Elemento<span class="material-symbols-outlined">
-                library_add
-              </span>
-            </button>
-          </div>
+        <div class="headerSearch">
+          <input
+            type="text"
+            class="inputHeader"
+            id="inputSearch"
+            placeholder="Ingrese un elemento"
+          />
+          <button class="buttonSearch" id="buttonSearch">
+            Buscar<span class="material-symbols-outlined"> search </span>
+          </button>
+        </div>
+        <div>
+          <button class="header_buttonAdd" id="buttonAddElement">
+            Agregar Elemento<span class="material-symbols-outlined">
+              library_add
+            </span>
+          </button>
         </div>
       </div>
     </header>
@@ -55,7 +54,6 @@
         </aside>
         <div class="store" id="storeContainer"></div>
       </div>
-      <!-- PopUp -->
       <div class="popUpContainer_principal" id="modalPopUp">
         <div class="popUpContainer">
           <div class="containerTitle_popUp">
@@ -79,7 +77,7 @@
             <button class="buttonPopUp accept" id="acceptButton">
               Aceptar
             </button>
-            <button class="buttonPopUp delete" id="deleteButton ">
+            <button class="buttonPopUp delete" id="deleteButton">
               Eliminar
             </button>
           </div>

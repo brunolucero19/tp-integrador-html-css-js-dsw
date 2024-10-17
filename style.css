@@ -8,24 +8,17 @@
 
 /* HEADER  */
 .container_principalHeader {
-  width: 100vw;
+  width: 100%;
   height: 8vh;
   background-color: #1e3f72;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
-}
-
-.container_contentHeader {
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.4rem;
 }
 
 .headerSearch {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 1vh;
 }
@@ -73,8 +66,9 @@
 
 /* MAIN  */
 .container_view {
+  width: 100%;
   display: grid;
-  grid-template-columns: 0.2fr 0.8fr;
+  grid-template-columns: 0.2fr 1fr;
 }
 
 .listAside {
@@ -124,7 +118,8 @@
 .store {
   background-color: #eeee;
   max-height: 92vh;
-  overflow-y: auto;
+  overflow-y: scroll;
+  width: 100%;
 }
 
 .sectionStore {
@@ -135,6 +130,7 @@
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+  width: 90%;
 }
 
 .sectionStore h3 {
@@ -151,12 +147,13 @@
 
 .containerCardItem {
   width: 100%;
-  height: 45vh;
+  height: 35vh;
   box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.3);
   background-color: white;
   border-radius: 0.4rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -164,12 +161,12 @@
 
 .containerCardItem:hover {
   transform: scale(1.08);
-  
 }
 
 .containerCardItem img {
   width: 100%;
-  height: 70%;
+  min-height: 225px;
+  max-height: 60%;
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
 }
@@ -184,7 +181,7 @@
 }
 
 .containerCardItem h2 {
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 
 .cardPriceText {
@@ -260,4 +257,80 @@
 
 .delete {
   background-color: rgb(240, 45, 45);
+}
+
+/* Responsive */
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .buttonSearch {
+    width: auto;
+  }
+
+  .header_buttonAdd {
+    width: auto;
+  }
+
+  .listAside h2 {
+    font-size: 2vh;
+  }
+
+  .listAside ul li {
+    font-size: 1.5vh;
+  }
+  .popUpContainer {
+    width: 90vw;
+  }
+  .container_view {
+    grid-template-columns: 0.1fr 1fr;
+  }
+  .containerProductStore {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3vh;
+  }
+
+  .sectionStore {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 90%;
+  }
+
+  .sectionStore h3 {
+    font-size: 3vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container_view {
+    grid-template-columns: 0.2fr 1fr;
+  }
+  .containerProductStore {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vh;
+  }
+
+  .containerCardItem {
+    height: 38vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .containerProductStore {
+    grid-template-columns: repeat(4, 0.6fr);
+    gap: 1vh;
+  }
+
+  .containerCardItem {
+    height: 38vh;
+  }
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: white;
+  border-radius: 0.4rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1e3f72;
+  border-radius: 0.4rem;
 }

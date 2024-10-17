@@ -2,6 +2,7 @@ import { renderCategories } from './src/services/categories'
 import { handleGetProductsToStore } from './src/views/store'
 import { openModal } from './src/views/modal'
 import './style.css'
+import { handleSearchProductByName } from './src/services/searchBar'
 
 //Aplicacion
 
@@ -18,10 +19,16 @@ export const setProductoActivo = (producto) => {
 handleGetProductsToStore()
 renderCategories()
 
+//Header
+//Boton agregar producto
 const buttonAdd = document.getElementById('buttonAddElement')
 
 buttonAdd.addEventListener('click', () => {
-    openModal()
+  openModal()
 })
 
-
+//Barra de busqueda
+const buttonSearch = document.getElementById('buttonSearch')
+buttonSearch.addEventListener('click', () => {
+  handleSearchProductByName()
+})
