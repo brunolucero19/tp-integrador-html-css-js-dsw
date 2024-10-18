@@ -165,10 +165,10 @@
 
 .containerCardItem img {
   width: 100%;
-  min-height: 225px;
-  max-height: 60%;
+  height: 70%;
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
+  object-fit: cover;
 }
 
 .containerText {
@@ -299,7 +299,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .container_view {
     grid-template-columns: 0.2fr 1fr;
   }
@@ -310,6 +310,12 @@
 
   .containerCardItem {
     height: 38vh;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .containerCardItem {
+    height: 40vh;
   }
 }
 
